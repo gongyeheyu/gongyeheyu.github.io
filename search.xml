@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>wiki</title>
-    <url>/2022/01/19/wiki/</url>
-    <content><![CDATA[<p>这是这个网站的wiki</p>
-<span id="more"></span>
-<p>这个站点本来是去年做的，但是一不小心搞坏了，所以就重做了一<br>个。<br>因为github本来就日常404，所以说啥时候进不了这个网站也很正<br>常，试试过几分钟刷新一下就好了，如果还是不行或404了，就给<br>我发邮件。<br>联系方式：<a href="mailto:&#103;&#x6f;&#x6e;&#x67;&#121;&#101;&#x68;&#x65;&#121;&#x75;&#64;&#111;&#x75;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#46;&#x63;&#x6f;&#109;">&#103;&#x6f;&#x6e;&#x67;&#121;&#101;&#x68;&#x65;&#121;&#x75;&#64;&#111;&#x75;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#46;&#x63;&#x6f;&#109;</a></p>
-<p> –GONGYE Heyu 2022.1.19</p>
-<p>无法成功数字化你的心情，但我们永远在这里<br>                                      ——《心跳23事》</p>
-]]></content>
-      <categories>
-        <category>wiki</category>
-      </categories>
-      <tags>
-        <tag>wiki</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【公冶图书馆】部分V家P主索引</title>
     <url>/2022/01/26/%E3%80%90%E5%85%AC%E5%86%B6%E5%9B%BE%E4%B9%A6%E9%A6%86%E3%80%91%E9%83%A8%E5%88%86V%E5%AE%B6P%E4%B8%BB%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<p>（2022年1月26日整理）</p>
@@ -336,5 +320,31 @@
 <p>  洛绫赛高</p>
 <p>  <a href="https://b23.tv/c9utte">https://b23.tv/c9utte</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>人生中第一个python程序</title>
+    <url>/2022/02/17/medor/</url>
+    <content><![CDATA[<p>行罢，人生中第一个python程序完成了<br>​写这个东西一上午，改bug一天…<br>​虽然说还有<br>​本来是想把前年写的bat脚本移植到linux<br>​结果一不小心用了一堆windows的库<br>​移植不了了<br>​再说罢<br><a href="medor_22.win.build@m2h.py">获取</a></p>
+]]></content>
+      <categories>
+        <category>medor</category>
+      </categories>
+      <tags>
+        <tag>medor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我找到了VOCALOIDCHINA网站！</title>
+    <url>/2022/02/16/vc/</url>
+    <content><![CDATA[<p>下载mht文件然后从浏览器打开</p>
+<span id="more"></span>
+<p><a href="vocaloidchina.zip">获取</a></p>
+]]></content>
+      <categories>
+        <category>vc</category>
+      </categories>
+      <tags>
+        <tag>vc</tag>
+      </tags>
   </entry>
 </search>
