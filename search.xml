@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试</title>
-    <url>/2021/08/28/gongye/</url>
-    <content><![CDATA[<p>这是一个测试文件<br><a href="https://imgloc.com/i/bAnKd"><img src="https://s1.328888.xyz/2022/08/23/bAnKd.png" alt="test.png"></a><br>以下是更新日志<br>2021.8.28 14:00 网站启用</p>
-]]></content>
-      <categories>
-        <category>旧版存档</category>
-      </categories>
-      <tags>
-        <tag>wiki</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【公冶图书馆】一些V/SV的歌曲推荐(22.04.09)</title>
     <url>/2022/04/09/%E3%80%90%E5%85%AC%E5%86%B6%E5%9B%BE%E4%B9%A6%E9%A6%86%E3%80%91%E4%B8%80%E4%BA%9BV-SV%E7%9A%84%E6%AD%8C%E6%9B%B2%E6%8E%A8%E8%8D%90-22409/</url>
     <content><![CDATA[<p>编辑：CRH380D-DL</p>
@@ -98,7 +86,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2022/08/23/hello-world/</url>
+    <url>/2022/10/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 
@@ -118,6 +106,66 @@
       <categories>
         <category>旧版存档</category>
       </categories>
+  </entry>
+  <entry>
+    <title>人生中第一个python程序</title>
+    <url>/2022/02/17/%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<p>行罢，人生中第一个python程序完成了<br>​写这个东西一上午，改bug一天…<br>​虽然说还有<br>​本来是想把前年写的bat脚本移植到linux<br>​结果一不小心用了一堆windows的库<br>​移植不了了<br>​再说罢</p>
+<p><a href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
+]]></content>
+      <categories>
+        <category>medor</category>
+      </categories>
+      <tags>
+        <tag>medor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我找到了VOCALOIDCHINA网站！</title>
+    <url>/2022/02/16/%E6%88%91%E6%89%BE%E5%88%B0%E4%BA%86VOCALOIDCHINA%E7%BD%91%E7%AB%99%EF%BC%81/</url>
+    <content><![CDATA[<p>下载mnt文件然后从浏览器打开</p>
+<span id="more"></span>
+<p><a href="https://7rqblt-my.sharepoint.com/:u:/g/personal/song_7rqblt_onmicrosoft_com/ETcZVDgqDJBOoou0am4m8nUBzYgilGbx9BQOngYm9cyA2A?e=EE3wbR">获取</a></p>
+]]></content>
+      <categories>
+        <category>vc</category>
+      </categories>
+      <tags>
+        <tag>vc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>说说我自己吧</title>
+    <url>/2022/10/02/%E8%AF%B4%E8%AF%B4%E6%88%91%E8%87%AA%E5%B7%B1%E5%90%A7/</url>
+    <content><![CDATA[<p>说说我自己吧</p>
+<span id="more"></span>
+<p>初一网课的时候接触到了偶然bat，然后在网上查教程的时候发现了一个很长的代码，是一个类似于系统小工具的东西，毫不犹豫把它复制下来了。后来自己不断查教程，修改，加新功能。</p>
+<p>后来接触到了linux，咋说呢，现在还有一些东西无法理解</p>
+<p>到了初三，就接触到python了，主要还是自己看书吧，那本书叫《编程小白的第一本python书》（我不是打广告啊）过了一个多月才真正开始在电脑上操作。我的第一个比较成熟的python程序是把之前那个bat移植过来了，其实一直到现在也有很多bug没有解决。后来又想写一个增量备份程序，但是没有完成。</p>
+<p>现在高一了，又有点纠结学C++还是Java，毕竟现在再看C的书也没那么难了。</p>
+<p>但是我决定放弃了。因为我学习不咋好，高中也没那么多时间了。但是为了不让我的程序死掉，我想找个人接手。（写的不咋地，还没啥注释）</p>
+<p>github.com/gongyeheyu</p>
+<p>（能赏我个小星星吗）</p>
+<p>总觉得吧，我这人啥都能干：写过程序，设计过CPU，做过策划，写过小说，喜欢数电，喜欢linux…</p>
+<p>几乎是我的信仰了</p>
+<p>值了</p>
+<p>还没完成的还有很多呢：写一个编程语言，做一个linux发行版，做一个自己的芯片，写一个商业软件，创建一个公司，收了微软(bushi)…</p>
+<p>这一切都还得从18年说起呢</p>
+<p>算了，下次再说吧</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>谢谢你，哔哩哔哩</title>
+    <url>/2021/08/29/%E8%B0%A2%E8%B0%A2%E4%BD%A0%EF%BC%8C%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</url>
+    <content><![CDATA[<span id="more"></span>
+<p><a href="https://imgloc.com/i/bA8sg"><img src="https://s1.328888.xyz/2022/08/23/bA8sg.jpg" alt="bA8sg.jpg"></a></p>
+]]></content>
+      <categories>
+        <category>旧版存档</category>
+      </categories>
+      <tags>
+        <tag>bili</tag>
+      </tags>
   </entry>
   <entry>
     <title>【公冶图书馆】部分同人文及作者索引</title>
@@ -392,43 +440,15 @@
       </tags>
   </entry>
   <entry>
-    <title>我找到了VOCALOIDCHINA网站！</title>
-    <url>/2022/02/16/%E6%88%91%E6%89%BE%E5%88%B0%E4%BA%86VOCALOIDCHINA%E7%BD%91%E7%AB%99%EF%BC%81/</url>
-    <content><![CDATA[<p>下载mnt文件然后从浏览器打开</p>
-<span id="more"></span>
-<p><a href="https://7rqblt-my.sharepoint.com/:u:/g/personal/song_7rqblt_onmicrosoft_com/ETcZVDgqDJBOoou0am4m8nUBzYgilGbx9BQOngYm9cyA2A?e=EE3wbR">获取</a></p>
-]]></content>
-      <categories>
-        <category>vc</category>
-      </categories>
-      <tags>
-        <tag>vc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生中第一个python程序</title>
-    <url>/2022/02/17/%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[<p>行罢，人生中第一个python程序完成了<br>​写这个东西一上午，改bug一天…<br>​虽然说还有<br>​本来是想把前年写的bat脚本移植到linux<br>​结果一不小心用了一堆windows的库<br>​移植不了了<br>​再说罢</p>
-<p><a href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
-]]></content>
-      <categories>
-        <category>medor</category>
-      </categories>
-      <tags>
-        <tag>medor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>谢谢你，哔哩哔哩</title>
-    <url>/2021/08/29/%E8%B0%A2%E8%B0%A2%E4%BD%A0%EF%BC%8C%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</url>
-    <content><![CDATA[<span id="more"></span>
-<p><a href="https://imgloc.com/i/bA8sg"><img src="https://s1.328888.xyz/2022/08/23/bA8sg.jpg" alt="bA8sg.jpg"></a></p>
+    <title>测试</title>
+    <url>/2021/08/28/gongye/</url>
+    <content><![CDATA[<p>这是一个测试文件<br><a href="https://imgloc.com/i/bAnKd"><img src="https://s1.328888.xyz/2022/08/23/bAnKd.png" alt="test.png"></a><br>以下是更新日志<br>2021.8.28 14:00 网站启用</p>
 ]]></content>
       <categories>
         <category>旧版存档</category>
       </categories>
       <tags>
-        <tag>bili</tag>
+        <tag>wiki</tag>
       </tags>
   </entry>
   <entry>
