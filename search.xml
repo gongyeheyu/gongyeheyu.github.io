@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>etacv-wiki</title>
+    <url>/2022/12/07/etacv-wiki/</url>
+    <content><![CDATA[<p>etacv的wiki</p>
+<span id="more"></span>
+
+<h1 id="etacv"><a href="#etacv" class="headerlink" title="etacv"></a>etacv</h1><p><img src="https://badgen.net/badge/code/etaCV/blue" alt=" "></p>
+<h2 id="1-第一个实例程序"><a href="#1-第一个实例程序" class="headerlink" title="1.第一个实例程序"></a>1.第一个实例程序</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//this is a example  </span><br><span class="line">output (hello,world!)  </span><br></pre></td></tr></table></figure>
+
+<p>首先我们看到了第一行文字：这是一段注释，etaCV有两种注释：  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//这是单行注释  </span><br><span class="line"> #这是  </span><br><span class="line">多行注释#  </span><br></pre></td></tr></table></figure>
+
+<p>再来看第二行文字：output()是一个输出函数，括号内为要输出的内容。  </p>
+<h2 id="2-变量"><a href="#2-变量" class="headerlink" title="2.变量"></a>2.变量</h2><p>下面看一个例子  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int year = 2022  </span><br></pre></td></tr></table></figure>
+
+<p>这个例子使用int关键字声明一个名为year的整数变量并给它赋值为”2022”<br>变量名可以为英文字母，数字，汉字，下划线组成，但不能以数字开头。<br>并且，etaCV对关键字，变量名大小写敏感，<code>int</code>,<code>Int</code>,<code>INT</code>并不是同一个东西，但对文件名大小写不敏感。  </p>
+<h2 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3.数据类型"></a>3.数据类型</h2><p>现在我们来看一下数据类型相关内容<br>我们来看一个例子  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int y = 2022  </span><br><span class="line">str m = 11  </span><br><span class="line">output ($y + $m)  </span><br></pre></td></tr></table></figure>
+
+<p>它将会有如下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">202211 </span><br></pre></td></tr></table></figure>
+
+<p>etaCV有四种数据类型：  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int 整数  </span><br><span class="line">float 浮点数  </span><br><span class="line">string 字符串  </span><br><span class="line">bool 布尔值  </span><br></pre></td></tr></table></figure>
+
+<p>如果你不知道一个变量是什么类型，可以通过type()函数来检验  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">output type($year)  </span><br></pre></td></tr></table></figure>
+
+<p>如你所见，不同类型的变量可以以字符串形式连接  </p>
+<h3 id="3-1不同数据类型的互相转换"><a href="#3-1不同数据类型的互相转换" class="headerlink" title="3.1不同数据类型的互相转换"></a>3.1不同数据类型的互相转换</h3><p>etaCV中数据类型的转换很简单，如果要将year变量转换为字符串，只需要如下操作  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">string $year  </span><br></pre></td></tr></table></figure>
+
+<p>转换为int型，布尔型返回为0或1，浮点数返回整数部分，字符串返回null<br>转换为float型，布尔型返回为0或1，字符串返回null<br>转换为str型，布尔型返回为true或flase<br>转换为bool型，int或float为1时返回1，其余均返回0  </p>
+<h2 id="4-字符串的分片与索引"><a href="#4-字符串的分片与索引" class="headerlink" title="4.字符串的分片与索引"></a>4.字符串的分片与索引</h2><p>字符串可以通过cut()来进行分片和索引<br>下面举几个例子：  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">string a = abcdefgh  </span><br><span class="line">output ($a.list(0))  </span><br><span class="line">output ($a.list(-7))  </span><br><span class="line">output ($a.list(7))  </span><br><span class="line">output ($a.list(-0))  </span><br><span class="line">output ($a.list(0:2))  </span><br><span class="line">output ($a.list(:2))  </span><br><span class="line">output ($a.list())  </span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a  </span><br><span class="line">a  </span><br><span class="line">h  </span><br><span class="line">h  </span><br><span class="line">a,b,c  </span><br><span class="line">a,b,c  </span><br><span class="line">a,b,c,d,e,f,g,h  </span><br></pre></td></tr></table></figure>
+
+<p>如你所见，和其他语言一样，在第四行中，从第0个字符开始到第二个字符，但不包含第二个  </p>
+<h2 id="5-函数和关键字"><a href="#5-函数和关键字" class="headerlink" title="5.函数和关键字"></a>5.函数和关键字</h2><p>总之，函数就是一个输入某个东西就能输出某个东西的东西<br>与其他语言一样，etaCV有一些内建函数，向它们输入数据，都会得到一个返回值。<br>下面的例子定义了一个函数  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">define int f2c(c)   </span><br><span class="line">    int f = (c * 9/5 + 32)  </span><br><span class="line">    return f + &quot;˚F&quot;  </span><br><span class="line">output f2c(35)</span><br></pre></td></tr></table></figure>
+<p>返回：</p>
+<figure class="highlight re"><table><tr><td class="code"><pre><span class="line"><span class="number">95</span> ˚F</span><br></pre></td></tr></table></figure>
+
+<p>第一行def关键字表示定义（或声明）一个名为f2c（）的函数，并且这个函数返回一个int型数据</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">关键字:var if else return define sleep continue break int float string bool null none true flase</span><br><span class="line">运算符:+ - * / ^(乘方) %(取模) == != &lt; &gt; &lt;= &gt;=</span><br><span class="line">input()返回输入信息</span><br><span class="line">output()返回输出内容  </span><br><span class="line">int()返回输入数据的整数形式（布尔型返回为0或1，浮点数返回整数部分，字符串返回null(即空集)）</span><br><span class="line">float()返回输入数据的浮点数形式（布尔型返回为0或1，字符串返回null）</span><br><span class="line">str()返回输入数据的字符串形式（布尔型返回为true或flase）</span><br><span class="line">bool()返回输入数据的正误</span><br><span class="line">list()返回输入数据的集合或分片集合</span><br><span class="line">hash()返回输入数据的哈希值</span><br><span class="line">len()返回输入数据的长度</span><br><span class="line">ramdom()返回随机数</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>etacv</category>
+      </categories>
+      <tags>
+        <tag>etacv</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2021/08/28/gongye/</url>
+    <content><![CDATA[<p>这是一个测试文件<br><a href="https://imgloc.com/i/bAnKd"><img src="https://s1.328888.xyz/2022/08/23/bAnKd.png" alt="test.png"></a><br>以下是更新日志<br>2021.8.28 14:00 网站启用</p>
+]]></content>
+      <categories>
+        <category>旧版存档</category>
+      </categories>
+      <tags>
+        <tag>wiki</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【公冶图书馆】一些V/SV的歌曲推荐(22.04.09)</title>
     <url>/2022/04/09/%E3%80%90%E5%85%AC%E5%86%B6%E5%9B%BE%E4%B9%A6%E9%A6%86%E3%80%91%E4%B8%80%E4%BA%9BV-SV%E7%9A%84%E6%AD%8C%E6%9B%B2%E6%8E%A8%E8%8D%90-22409/</url>
     <content><![CDATA[<p>编辑：CRH380D-DL</p>
@@ -82,127 +150,6 @@
       </categories>
       <tags>
         <tag>公冶图书馆-CRH380D-DL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【公冶图书馆】部分V家P主索引(22.01.26)</title>
-    <url>/2022/01/26/%E3%80%90%E5%85%AC%E5%86%B6%E5%9B%BE%E4%B9%A6%E9%A6%86%E3%80%91%E9%83%A8%E5%88%86V%E5%AE%B6P%E4%B8%BB%E7%B4%A2%E5%BC%95-22126/</url>
-    <content><![CDATA[<p>编辑：GONGYE Heyu</p>
-<span id="more"></span>
-<p>1.纯白</p>
-<p>   代表作：中华少女系列，大司徒系列，唱给雅音宫羽系列。单曲：千里邀月，海棠仙，华心彩。</p>
-<p>   最新作：【洛天依原创】虚拟Paradise【现实逃避Project】</p>
-<p>2.ilem</p>
-<p>   代表作：普通Disco，僵尸舞，今天没吃药，鸽子。</p>
-<p>   最新作：洛天依 乐正绫 原创《我没有歌能给你听》</p>
-<p>3.COPY</p>
-<p>   代表作：世末歌者，霜雪千年，为了你唱下去，为谁而为。</p>
-<p>   最新作：【乐正绫V5 Dark】我的稻草人</p>
-<p>4.动点P</p>
-<p>   代表作：Lemon，漂亮面对，Hear me。</p>
-<p>   最新作：【洛天依V5原创】早高峰</p>
-<p>5.阿良良木健</p>
-<p>   代表作：绝体绝命，告别曲，末日DISCO，明日DISCO。</p>
-<p>   最新作：【洛天依·乐正绫原创曲】黑鸟【动画PV付】</p>
-<p>6.JUSF周存 </p>
-<p>   代表作：双向系列，心跳同步的时光，火烧云，大小姐与大少爷的反派生涯。</p>
-<p>   最新作：【洛天依原创曲】恺撒【PV付/洛卷卷】</p>
-<p>7.sya</p>
-<p>   代表作：肆自系列，kill my……系列。</p>
-<p>   最新作：【洛天依原创】白眼狼</p>
-<p>8.阿原Adam</p>
-<p>   代表作：点妆谣，无常，人间，不归。</p>
-<p>   最新作：【海伊原创】美人鱼『海盼伊人』No.12</p>
-<p>9.纳兰寻风</p>
-<p>   代表作：繁华唱遍，牵丝戏，弱水三千。</p>
-<p>   最新作：【言和翻唱】神女劈观</p>
-<p>10.DELA 雨狸</p>
-<p>   代表作：妄想症系列，Saligia系列。</p>
-<p>   最新作：【新月冰冰】绝世丑角【妄想症：破茧】DLC曲。</p>
-<p>11.litterzy</p>
-<p>   代表作：刀剑春秋，冠世一战</p>
-<p>   最新作：【洛天依日语】螺旋らせん【原创曲】。</p>
-<p>12.桑葚上的猴子</p>
-<p>  代表作：节气系列</p>
-<p>   最新作：【徵羽摩柯原创曲】流光</p>
-<p>13.PoKeR__扑克</p>
-<p>   代表作：爱</p>
-<p>   最新作：《我和我的马一起旅行》</p>
-<p>14.没有龟壳的乌龟</p>
-<p>   代表作：九九八十一，逆浪千秋，天行健，八辈子。</p>
-<p>   最新作：高考应援原创曲《不负韶光》【洛天依/乐正绫】</p>
-<p>15.希望索任合资（已退圈）</p>
-<p>   代表作：灞柳风月，劫道。</p>
-<p>   最新作：（找不到）</p>
-<p>16.初心社米库喵</p>
-<p>   代表作：伊人如梦言如许，静默少女，初音未来的再临。</p>
-<p>   最新作：（找不到）</p>
-]]></content>
-      <categories>
-        <category>公冶图书馆</category>
-      </categories>
-      <tags>
-        <tag>公冶图书馆-GONGYE_Heyu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人生中第一个python程序</title>
-    <url>/2022/02/17/%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[<p>行罢，人生中第一个python程序完成了<br>​写这个东西一上午，改bug一天…<br>​虽然说还有<br>​本来是想把前年写的bat脚本移植到linux<br>​结果一不小心用了一堆windows的库<br>​移植不了了<br>​再说罢</p>
-<p><a href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
-]]></content>
-      <categories>
-        <category>medor</category>
-      </categories>
-      <tags>
-        <tag>medor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我找到了VOCALOIDCHINA网站！</title>
-    <url>/2022/02/16/%E6%88%91%E6%89%BE%E5%88%B0%E4%BA%86VOCALOIDCHINA%E7%BD%91%E7%AB%99%EF%BC%81/</url>
-    <content><![CDATA[<p>下载mnt文件然后从浏览器打开</p>
-<span id="more"></span>
-<p><a href="https://7rqblt-my.sharepoint.com/:u:/g/personal/song_7rqblt_onmicrosoft_com/ETcZVDgqDJBOoou0am4m8nUBzYgilGbx9BQOngYm9cyA2A?e=EE3wbR">获取</a></p>
-]]></content>
-      <categories>
-        <category>vc</category>
-      </categories>
-      <tags>
-        <tag>vc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>说说我自己吧</title>
-    <url>/2022/10/02/%E8%AF%B4%E8%AF%B4%E6%88%91%E8%87%AA%E5%B7%B1%E5%90%A7/</url>
-    <content><![CDATA[<p>说说我自己吧</p>
-<span id="more"></span>
-<p>初一网课的时候接触到了偶然bat，然后在网上查教程的时候发现了一个很长的代码，是一个类似于系统小工具的东西，毫不犹豫把它复制下来了。后来自己不断查教程，修改，加新功能。</p>
-<p>后来接触到了linux，咋说呢，现在还有一些东西无法理解</p>
-<p>到了初三，就接触到python了，主要还是自己看书吧，那本书叫《编程小白的第一本python书》（我不是打广告啊）过了一个多月才真正开始在电脑上操作。我的第一个比较成熟的python程序是把之前那个bat移植过来了，其实一直到现在也有很多bug没有解决。后来又想写一个增量备份程序，但是没有完成。</p>
-<p>现在高一了，又有点纠结学C++还是Java，毕竟现在再看C的书也没那么难了。</p>
-<p>但是我决定放弃了。因为我学习不咋好，高中也没那么多时间了。但是为了不让我的程序死掉，我想找个人接手。（写的不咋地，还没啥注释）</p>
-<p>github.com/gongyeheyu</p>
-<p>（能赏我个小星星吗）</p>
-<p>总觉得吧，我这人啥都能干：写过程序，设计过CPU，做过策划，写过小说，喜欢数电，喜欢linux…</p>
-<p>几乎是我的信仰了</p>
-<p>值了</p>
-<p>还没完成的还有很多呢：写一个编程语言，做一个linux发行版，做一个自己的芯片，写一个商业软件，创建一个公司，收了微软(bushi)…</p>
-<p>这一切都还得从18年说起呢</p>
-<p>算了，下次再说吧</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>谢谢你，哔哩哔哩</title>
-    <url>/2021/08/29/%E8%B0%A2%E8%B0%A2%E4%BD%A0%EF%BC%8C%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</url>
-    <content><![CDATA[<span id="more"></span>
-<p><a href="https://imgloc.com/i/bA8sg"><img src="https://s1.328888.xyz/2022/08/23/bA8sg.jpg" alt="bA8sg.jpg"></a></p>
-]]></content>
-      <categories>
-        <category>旧版存档</category>
-      </categories>
-      <tags>
-        <tag>bili</tag>
       </tags>
   </entry>
   <entry>
@@ -478,20 +425,129 @@
       </tags>
   </entry>
   <entry>
-    <title>测试</title>
-    <url>/2021/08/28/gongye/</url>
-    <content><![CDATA[<p>这是一个测试文件<br><a href="https://imgloc.com/i/bAnKd"><img src="https://s1.328888.xyz/2022/08/23/bAnKd.png" alt="test.png"></a><br>以下是更新日志<br>2021.8.28 14:00 网站启用</p>
+    <title>人生中第一个python程序</title>
+    <url>/2022/02/17/%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<p>行罢，人生中第一个python程序完成了<br>​写这个东西一上午，改bug一天…<br>​虽然说还有<br>​本来是想把前年写的bat脚本移植到linux<br>​结果一不小心用了一堆windows的库<br>​移植不了了<br>​再说罢</p>
+<p><a href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
+]]></content>
+      <categories>
+        <category>medor</category>
+      </categories>
+      <tags>
+        <tag>medor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我找到了VOCALOIDCHINA网站！</title>
+    <url>/2022/02/16/%E6%88%91%E6%89%BE%E5%88%B0%E4%BA%86VOCALOIDCHINA%E7%BD%91%E7%AB%99%EF%BC%81/</url>
+    <content><![CDATA[<p>下载mnt文件然后从浏览器打开</p>
+<span id="more"></span>
+<p><a href="https://7rqblt-my.sharepoint.com/:u:/g/personal/song_7rqblt_onmicrosoft_com/ETcZVDgqDJBOoou0am4m8nUBzYgilGbx9BQOngYm9cyA2A?e=EE3wbR">获取</a></p>
+]]></content>
+      <categories>
+        <category>vc</category>
+      </categories>
+      <tags>
+        <tag>vc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>说说我自己吧</title>
+    <url>/2022/10/02/%E8%AF%B4%E8%AF%B4%E6%88%91%E8%87%AA%E5%B7%B1%E5%90%A7/</url>
+    <content><![CDATA[<p>说说我自己吧</p>
+<span id="more"></span>
+<p>初一网课的时候接触到了偶然bat，然后在网上查教程的时候发现了一个很长的代码，是一个类似于系统小工具的东西，毫不犹豫把它复制下来了。后来自己不断查教程，修改，加新功能。</p>
+<p>后来接触到了linux，咋说呢，现在还有一些东西无法理解</p>
+<p>到了初三，就接触到python了，主要还是自己看书吧，那本书叫《编程小白的第一本python书》（我不是打广告啊）过了一个多月才真正开始在电脑上操作。我的第一个比较成熟的python程序是把之前那个bat移植过来了，其实一直到现在也有很多bug没有解决。后来又想写一个增量备份程序，但是没有完成。</p>
+<p>现在高一了，又有点纠结学C++还是Java，毕竟现在再看C的书也没那么难了。</p>
+<p>但是我决定放弃了。因为我学习不咋好，高中也没那么多时间了。但是为了不让我的程序死掉，我想找个人接手。（写的不咋地，还没啥注释）</p>
+<p>github.com/gongyeheyu</p>
+<p>（能赏我个小星星吗）</p>
+<p>总觉得吧，我这人啥都能干：写过程序，设计过CPU，做过策划，写过小说，喜欢数电，喜欢linux…</p>
+<p>几乎是我的信仰了</p>
+<p>值了</p>
+<p>还没完成的还有很多呢：写一个编程语言，做一个linux发行版，做一个自己的芯片，写一个商业软件，创建一个公司，收了微软(bushi)…</p>
+<p>这一切都还得从18年说起呢</p>
+<p>算了，下次再说吧</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>谢谢你，哔哩哔哩</title>
+    <url>/2021/08/29/%E8%B0%A2%E8%B0%A2%E4%BD%A0%EF%BC%8C%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</url>
+    <content><![CDATA[<span id="more"></span>
+<p><a href="https://imgloc.com/i/bA8sg"><img src="https://s1.328888.xyz/2022/08/23/bA8sg.jpg" alt="bA8sg.jpg"></a></p>
 ]]></content>
       <categories>
         <category>旧版存档</category>
       </categories>
       <tags>
-        <tag>wiki</tag>
+        <tag>bili</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【公冶图书馆】部分V家P主索引(22.01.26)</title>
+    <url>/2022/01/26/%E3%80%90%E5%85%AC%E5%86%B6%E5%9B%BE%E4%B9%A6%E9%A6%86%E3%80%91%E9%83%A8%E5%88%86V%E5%AE%B6P%E4%B8%BB%E7%B4%A2%E5%BC%95-22126/</url>
+    <content><![CDATA[<p>编辑：GONGYE Heyu</p>
+<span id="more"></span>
+<p>1.纯白</p>
+<p>   代表作：中华少女系列，大司徒系列，唱给雅音宫羽系列。单曲：千里邀月，海棠仙，华心彩。</p>
+<p>   最新作：【洛天依原创】虚拟Paradise【现实逃避Project】</p>
+<p>2.ilem</p>
+<p>   代表作：普通Disco，僵尸舞，今天没吃药，鸽子。</p>
+<p>   最新作：洛天依 乐正绫 原创《我没有歌能给你听》</p>
+<p>3.COPY</p>
+<p>   代表作：世末歌者，霜雪千年，为了你唱下去，为谁而为。</p>
+<p>   最新作：【乐正绫V5 Dark】我的稻草人</p>
+<p>4.动点P</p>
+<p>   代表作：Lemon，漂亮面对，Hear me。</p>
+<p>   最新作：【洛天依V5原创】早高峰</p>
+<p>5.阿良良木健</p>
+<p>   代表作：绝体绝命，告别曲，末日DISCO，明日DISCO。</p>
+<p>   最新作：【洛天依·乐正绫原创曲】黑鸟【动画PV付】</p>
+<p>6.JUSF周存 </p>
+<p>   代表作：双向系列，心跳同步的时光，火烧云，大小姐与大少爷的反派生涯。</p>
+<p>   最新作：【洛天依原创曲】恺撒【PV付/洛卷卷】</p>
+<p>7.sya</p>
+<p>   代表作：肆自系列，kill my……系列。</p>
+<p>   最新作：【洛天依原创】白眼狼</p>
+<p>8.阿原Adam</p>
+<p>   代表作：点妆谣，无常，人间，不归。</p>
+<p>   最新作：【海伊原创】美人鱼『海盼伊人』No.12</p>
+<p>9.纳兰寻风</p>
+<p>   代表作：繁华唱遍，牵丝戏，弱水三千。</p>
+<p>   最新作：【言和翻唱】神女劈观</p>
+<p>10.DELA 雨狸</p>
+<p>   代表作：妄想症系列，Saligia系列。</p>
+<p>   最新作：【新月冰冰】绝世丑角【妄想症：破茧】DLC曲。</p>
+<p>11.litterzy</p>
+<p>   代表作：刀剑春秋，冠世一战</p>
+<p>   最新作：【洛天依日语】螺旋らせん【原创曲】。</p>
+<p>12.桑葚上的猴子</p>
+<p>  代表作：节气系列</p>
+<p>   最新作：【徵羽摩柯原创曲】流光</p>
+<p>13.PoKeR__扑克</p>
+<p>   代表作：爱</p>
+<p>   最新作：《我和我的马一起旅行》</p>
+<p>14.没有龟壳的乌龟</p>
+<p>   代表作：九九八十一，逆浪千秋，天行健，八辈子。</p>
+<p>   最新作：高考应援原创曲《不负韶光》【洛天依/乐正绫】</p>
+<p>15.希望索任合资（已退圈）</p>
+<p>   代表作：灞柳风月，劫道。</p>
+<p>   最新作：（找不到）</p>
+<p>16.初心社米库喵</p>
+<p>   代表作：伊人如梦言如许，静默少女，初音未来的再临。</p>
+<p>   最新作：（找不到）</p>
+]]></content>
+      <categories>
+        <category>公冶图书馆</category>
+      </categories>
+      <tags>
+        <tag>公冶图书馆-GONGYE_Heyu</tag>
       </tags>
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2022/10/01/hello-world/</url>
+    <url>/2022/12/07/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 
