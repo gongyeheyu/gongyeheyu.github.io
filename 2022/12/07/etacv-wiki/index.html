@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://badgen.net/badge/code/etaCV/blue">
 <meta property="article:published_time" content="2022-12-07T03:07:06.000Z">
-<meta property="article:modified_time" content="2022-12-07T03:14:44.510Z">
+<meta property="article:modified_time" content="2022-12-07T03:14:44.000Z">
 <meta property="article:author" content="GONGYE Heyu">
 <meta property="article:tag" content="etacv">
 <meta name="twitter:card" content="summary">
@@ -338,10 +338,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/12/07/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2022/10/02/%E8%AF%B4%E8%AF%B4%E6%88%91%E8%87%AA%E5%B7%B1%E5%90%A7/" rel="prev" title="说说我自己吧">
+      <i class="fa fa-chevron-left"></i> 说说我自己吧
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/12/19/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -354,6 +357,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -454,7 +458,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -529,6 +533,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6fd3794a4a701cc2d26c',
+      clientSecret: 'bdd3ac40cb277f10aa5f105d9b79657fbef1daec',
+      repo        : 'gongyeheyu.github.io',
+      owner       : 'gongyeheyu',
+      admin       : ['gongyeheyu'],
+      id          : '608349ab3f312f36bb8c48100aca6471',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>

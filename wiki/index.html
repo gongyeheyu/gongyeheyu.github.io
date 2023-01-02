@@ -233,7 +233,7 @@
       <div class="post-body">
           <p>这是这个网站的wiki</p>
 <span id="more"></span>
-<p>这个站点本来是去年做的，但是一不小心搞坏了，所以就重做了一<br>个。<br>因为github本来就日常404，所以说啥时候进不了这个网站也很正<br>常，试试过几分钟刷新一下就好了，如果还是不行或404了，就给<br>我发邮件。<br>联系方式：<a href="mailto:&#103;&#x6f;&#x6e;&#x67;&#121;&#x65;&#x68;&#x65;&#x79;&#x75;&#64;&#111;&#x75;&#116;&#108;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x6f;&#x6e;&#x67;&#121;&#x65;&#x68;&#x65;&#x79;&#x75;&#64;&#111;&#x75;&#116;&#108;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#x6d;</a><br><a target="_blank" rel="noopener" href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
+<p>这个站点本来是去年做的，但是一不小心搞坏了，所以就重做了一<br>个。<br>因为github本来就日常404，所以说啥时候进不了这个网站也很正<br>常，试试过几分钟刷新一下就好了，如果还是不行或404了，就给<br>我发邮件。<br>联系方式：<a href="mailto:&#103;&#x6f;&#110;&#x67;&#121;&#101;&#x68;&#x65;&#121;&#117;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#111;&#x6b;&#46;&#99;&#x6f;&#109;">&#103;&#x6f;&#110;&#x67;&#121;&#101;&#x68;&#x65;&#121;&#117;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#111;&#x6b;&#46;&#99;&#x6f;&#109;</a><br><a target="_blank" rel="noopener" href="https://github.com/gongyeheyu/medor-projects">Github</a></p>
 <p>无法成功数字化你的心情，但我们永远在这里    ——《心跳23事》<br> –GONGYE Heyu 2022.1.19</p>
 <p>以下是更新日志</p>
 <p>更新了一些东西<br> –GONGYE Heyu 2022.8.23</p>
@@ -254,6 +254,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -353,7 +354,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -428,6 +429,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '6fd3794a4a701cc2d26c',
+      clientSecret: 'bdd3ac40cb277f10aa5f105d9b79657fbef1daec',
+      repo        : 'gongyeheyu.github.io',
+      owner       : 'gongyeheyu',
+      admin       : ['gongyeheyu'],
+      id          : '1636b104528da29fe3335bef52f3f7e7',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
